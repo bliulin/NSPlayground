@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1054576843449",
+    "firebase_url": "https://ns-plugin-test.firebaseio.com",
+    "project_id": "ns-plugin-test",
+    "storage_bucket": "ns-plugin-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1054576843449:android:e5888733e08fd7ffdd5968",
+        "android_client_info": {
+          "package_name": "bliulin.nsDemoApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1054576843449-f3mfcpbeh88c97dam4n9ou5uvtvvt025.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCURvLWTRtZLuWevQV19W5ZrfG6x62Pe9U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1054576843449-f3mfcpbeh88c97dam4n9ou5uvtvvt025.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

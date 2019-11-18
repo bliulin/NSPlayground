@@ -1,0 +1,34 @@
+<ActionBar class="action-bar">
+    <!-- 
+    Use the NavigationButton as a side-drawer button in Android
+    because ActionItems are shown on the right side of the ActionBar
+    -->
+    <NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()"></NavigationButton>
+    <!-- 
+    Use the ActionItem for IOS with position set to left. Using the
+    NavigationButton as a side-drawer button in iOS is not possible,
+    because its function is to always navigate back in the application.
+    -->
+    <ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"
+        ios.position="left">
+    </ActionItem>
+    <Label class="action-bar-title" text="Search"></Label>
+</ActionBar>
+
+<GridLayout rows="auto, *">
+    <GridLayout row="0" columns="*, auto" class="add-bar">
+        <TextField #groceryTextField hint="Enter a grocery item" col="0"></TextField>
+        <Image width="32" height="32" stretch="aspectFill" src="res://search_ico_1056516"
+            (tap)="search(groceryTextField)" col="1"></Image>
+    </GridLayout>
+    <!-- <ListView [items]="groceries" row="1" class="small-spacing">
+        <ng-template let-item="item">
+            <Label [text]="item.name" class="medium-spacing"></Label>
+        </ng-template>
+    </ListView> -->
+    <RadListView [items]="groceries" row="2">
+        <ng-template tkListItemTemplate let-item="item">
+            <Label [text]="item.name"></Label>          
+        </ng-template>
+    </RadListView>
+</GridLayout>
